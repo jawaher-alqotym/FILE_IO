@@ -6,11 +6,11 @@ while True:
         break
     if user_input.casefold() == 'y':
         input_into_to_do = input('Type in new To-Do item: ')
-        file = open('To_do.txt', 'a').write(f'\n{input_into_to_do}')
+        file = open('FILE_IO/To_Do.txt', 'a').write(f'\n{input_into_to_do}')
 
     else:
         if input('do you want to list your To-Do items ?').casefold() == 'y':
-            file = open('To_do.txt', 'r').read()
+            file = open('FILE_IO/To_Do.txt', 'r').read()
             print(f'\n{file}')
         
 
